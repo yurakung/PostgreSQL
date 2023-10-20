@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h3 class="my-2">Delete Note</h3>
+<p>Are you sure you want to delete this note?</p>
+<h4>Note Details:</h4>
+<p>Title: {{ note.title }}</p>
+<p>Description: {{ note.description }}</p>
+<form action="" method="POST">
+
+  {{ form.hidden_tag() }}
+  <button type="submit" class="btn btn-danger">Delete</button>
+</form>
+
+{% endblock %}

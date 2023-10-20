@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block body %}
+<h3 class="my-2">Delete Tag</h3>
+<p>Are you sure you want to delete the tag "{{ tag.name }}"?</p>
+<form action="" method="POST">
+  <button type="submit" class="btn btn-danger">Delete</button>
+  <a class="btn btn-secondary" href="{{ url_for('index') }}">Cancel</a>
+</form>
+
+{% endblock %}
